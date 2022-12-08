@@ -1,0 +1,66 @@
+nav {
+  padding: 5px 25px 5px 25px;
+  border-bottom: 1px solid $color-offwhite;
+
+  @media only screen and (max-width: 1200px) {
+    padding: 20px 25px 20px 25px;
+  }
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  & > h1 {
+    font-size: 3.5em;
+  }
+}
+
+ul {
+  list-style: none;
+
+  @media only screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+li {
+  display: inline;
+  margin-left: 2px;
+
+  & img {
+    width: 9%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+    border: none;
+  }
+}
+
+.cart-container {
+  position: relative;
+}
+
+.cart-quantity {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: $color-error-red;
+  padding: 3px;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  font-size: 12px;
+  color: $color-white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 6px;
+  font-weight: 800;
+}
+
+ion-icon {
+  font-size: 36px;
+}

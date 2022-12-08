@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="sass/main.css" />
+
+    <title>Sneakers</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <h1>Sneakers</h1>
+
+        <ul>
+          <li><img src="images/nike.webp" class="logos" alt="Nike logo" /></li>
+          <li>
+            <img src="images/jordan.webp" class="logos" alt="Jordan logo" />
+          </li>
+          <li>
+            <img src="images/adidas.webp" class="logos" alt="Adidas logo" />
+          </li>
+          <li>
+            <img src="images/reebok.webp" class="logos" alt="Reebok logo" />
+          </li>
+          <li>
+            <img
+              src="images/newbalance.webp"
+              class="logos"
+              alt="New Balance logo"
+            />
+          </li>
+          <li><img src="images/vans.webp" class="logos" alt="Vans logo" /></li>
+          <li><img src="images/puma.webp" class="logos" alt="Puma logo" /></li>
+          <li><img src="images/crocs.png" class="logos" alt="Crocs logo" /></li>
+        </ul>
+
+        <div class="cart-container" id="cart-container">
+          <ion-icon name="cart-outline"></ion-icon>
+          <div class="cart-quantity" id="cart-quantity">0</div>
+          <div class="checkout-modal hidden" id="checkout-modal">
+            <h2>Cart</h2>
+            <div class="cart-content__container" id="cart-content">
+              <p>Your cart is empty</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="product-container">
+      <div class="img-container">
+        <div class="img-large__container" id="img-large__container">
+          <img
+            src="images/banned-default.webp"
+            id="img-large"
+            class="img-large"
+            alt="Both Air Jordan 1 'Banned' sneakers from the front/right"
+          />
+          <div class="new-tag">
+            <h3>NEW</h3>
+          </div>
+        </div>
+        <div class="preview-container">
+          <img
+            class="img-small active"
+            src="images/banned-default.webp"
+            alt="Both Air Jordan 1 'Banned' sneakers from the front/right"
+          />
+          <img
+            class="img-small"
+            src="images/banned-left.webp"
+            alt="Right Air Jordan 1 'Banned' sneaker from the side"
+          />
+          <img
+            class="img-small"
+            src="images/banned-heel.webp"
+            alt="Both Air Jordan 1 'Banned' sneaker's heels"
+          />
+          <img
+            class="img-small"
+            src="images/banned-sole.webp"
+            alt="Right Air Jordan 1 'Banned' sneaker's sole "
+          />
+        </div>
+      </div>
+
+      <div class="info-container">
+        <div class="product-title">
+          <h2>Air Jordan 1 "Banned"</h2>
+        </div>
+
+        <p>
+          In 1985, the Air Jordan I left a permanent impression on the league.
+          Over three decades later, the icon now returns alongside the modern
+          Anti-Gravity Machines known as the Air Jordan XXXI. Upon its return,
+          the icon stays true to its roots, constructed with premium leather in
+          timeless black and red tones.
+        </p>
+        <h2 class="product-price">$160.00</h2>
+        <div class="button-container">
+          <div>
+            <button class="quantityBtn" id="decrement" disabled>-</button>
+            <span class="quantity-display" id="quantity-display">0</span>
+            <button class="quantityBtn" id="increment">+</button>
+          </div>
+          <button id="cartBtn" class="cartBtn" disabled>Add to cart</button>
+        </div>
+      </div>
+    </main>
+
+    <div class="purchase-container" id="purchase-container">
+      <div class="purchase-modal" id="purchase-modal"></div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

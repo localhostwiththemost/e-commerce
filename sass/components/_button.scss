@@ -1,0 +1,50 @@
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  background-color: $color-offwhite;
+  border: none;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: auto;
+}
+
+.quantity-display {
+  background-color: $color-offwhite;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 20px;
+}
+
+.cartBtn {
+  width: 200px;
+  border-radius: 10px;
+  background-color: $color-black;
+  color: $color-white;
+  cursor: pointer;
+}
+
+.cartBtn:hover {
+  box-shadow: 10px 10px 5px 0px rgba(140, 130, 130, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(140, 130, 130, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(140, 130, 130, 0.75);
+}
+
+.cartBtn:disabled {
+  background-color: $color-grey;
+  cursor: auto;
+
+  &:hover {
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,77 @@
+.checkout-modal {
+  height: 170px;
+  background-color: #fff;
+  box-shadow: 0 4px 20px -4px #aaa;
+  border-radius: 8px;
+  position: absolute;
+  right: 0;
+  top: 35px;
+  width: 320px;
+  padding: 15px;
+  z-index: 8000;
+
+  & > h2 {
+    font-size: 20px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.cart-content__container {
+  display: flex;
+  justify-content: center;
+
+  & > p {
+    margin-top: 50px;
+  }
+}
+
+.cart-content__container-full {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cart-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  & > ion-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+.modal-thumbnail {
+  width: 25%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  border: none;
+  padding: 0;
+}
+
+.cart-content__text {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  align-items: center;
+
+  & > h3 {
+    font-size: 16px;
+  }
+
+  & > p {
+    font-size: 14px;
+    padding: 0;
+  }
+}
+
+.checkout-btn {
+  border-radius: 10px;
+  background-color: $color-black;
+  color: $color-white;
+  cursor: pointer;
+}
