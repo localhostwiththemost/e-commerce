@@ -102,6 +102,17 @@ button:disabled {
   padding: 15px;
   z-index: 8000;
 }
+@media only screen and (max-width: 450px) {
+  .checkout-modal {
+    width: 225px;
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .checkout-modal {
+    right: -10px;
+  }
+}
 .checkout-modal > h2 {
   font-size: 20px;
 }
@@ -121,6 +132,8 @@ button:disabled {
 .cart-content__container-full {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 
@@ -128,6 +141,13 @@ button:disabled {
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+@media only screen and (max-width: 450px) {
+  .cart-content {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
 }
 .cart-content > ion-icon {
   font-size: 24px;
@@ -214,6 +234,9 @@ button:disabled {
   padding: 30px;
   gap: 80px;
 }
+.purchase-modal > h2 {
+  font-size: 2.5rem;
+}
 
 .purchase-content {
   display: flex;
@@ -227,6 +250,9 @@ button:disabled {
   white-space: nowrap;
   align-items: center;
   gap: 5px;
+}
+.purchase-content__text > h3 {
+  font-size: 2rem;
 }
 
 .thankyou-text {
@@ -263,7 +289,7 @@ nav {
   align-items: center;
 }
 .nav-container > h1 {
-  font-size: 3.5em;
+  font-size: 3.5rem;
 }
 
 ul {
@@ -335,7 +361,7 @@ ion-icon {
 .product-title {
   padding-bottom: 10px;
   text-align: center;
-  font-size: 1.8em;
+  font-size: 1.8rem;
 }
 
 .img-container {
@@ -418,7 +444,7 @@ ion-icon {
   padding: 6px;
   width: 34px;
   border-radius: 10px;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -436,7 +462,7 @@ ion-icon {
 
 p {
   padding: 0 60px;
-  font-size: 1.8em;
+  font-size: 1.8rem;
 }
 @media only screen and (max-width: 600px) {
   p {
@@ -445,7 +471,7 @@ p {
 }
 
 .product-price {
-  font-size: 2.2em;
+  font-size: 2.2rem;
 }
 
 img {

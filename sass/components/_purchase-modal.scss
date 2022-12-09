@@ -21,6 +21,10 @@
   align-items: center;
   padding: 30px;
   gap: 80px;
+
+  & > h2 {
+    font-size: 2.5rem;
+  }
 }
 
 .purchase-content {
@@ -35,6 +39,10 @@
   white-space: nowrap;
   align-items: center;
   gap: 5px;
+
+  & > h3 {
+    font-size: 2rem;
+  }
 }
 
 .thankyou-text {

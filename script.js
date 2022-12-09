@@ -125,6 +125,7 @@ document.querySelector("#cart-container").addEventListener("click", (event) => {
     event.target.matches(".checkout-btn") ||
     event.target.closest(".checkout-btn")
   ) {
+    checkoutModal.classList.add("hidden");
     purchaseContainer.style.display = "flex";
     purchaseModal.style.display = "flex";
     purchaseModal.innerHTML = `
@@ -158,7 +159,6 @@ document.querySelector("#cart-container").addEventListener("click", (event) => {
 
 // PLACE ORDER BUTTON(PURCHASE MODAL)
 document.querySelector("#purchase-modal").addEventListener("click", (event) => {
-  //event.stopPropagation();
   if (
     event.target.matches(".checkout-btn") ||
     event.target.closest(".checkout-btn")
@@ -180,6 +180,14 @@ document.querySelector("#purchase-modal").addEventListener("click", (event) => {
     `;
     localStorage.setItem("cartQuantity", 0);
     quantity = 0;
+  }
+});
+
+// WHEN PURCHASE MODAL IS DISPLAYED, CLOSE MODAL WHEN CLICKED OFF
+purchaseContainer.addEventListener("click", function (e) {
+  if (e.target.classList.contains("purchase-container")) {
+    purchaseContainer.style.display = "none";
+    purchaseModal.style.display = "none";
   }
 });
 
