@@ -8,9 +8,18 @@ nav {
 }
 
 .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   & > h1 {
@@ -33,6 +42,7 @@ li {
   & img {
     width: 9%;
     aspect-ratio: 3/2;
+    -o-object-fit: contain;
     object-fit: contain;
     mix-blend-mode: color-burn;
     border: none;
@@ -54,7 +64,11 @@ li {
   height: 12px;
   font-size: 12px;
   color: $color-white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
   padding-bottom: 6px;
