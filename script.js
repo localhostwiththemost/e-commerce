@@ -1,3 +1,5 @@
+"use strict";
+
 const decrement = document.getElementById("decrement");
 const increment = document.getElementById("increment");
 const quantityDisplay = document.getElementById("quantity-display");
@@ -18,6 +20,7 @@ let quantity = 0;
 // IF LS DOESN'T YET HAVE THE hasCodeRunBefore PROPERTY DEFINED, SET cartQuantity PROPERTY in LS TO 0
 window.onload = function () {
   if (localStorage.getItem("hasCodeRunBefore") === null) {
+    cartQuantity.textContent = "0";
     localStorage.setItem("cartQuantity", 0);
     localStorage.setItem("hasCodeRunBefore", true);
   }
