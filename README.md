@@ -12,3 +12,7 @@ I built this application to try my hand at designing something that involved two
 - CSS3
 - SASS
 - JavaScript
+
+## Live
+
+https://e-commerce-sneaker.netlify.app/
